@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;500;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+    
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-separate header__navbar-item-hover-qr"><a href="#" class="header__navbar-item-link">Tải ứng dụng</a>
+                            <!--QR code-->
+                            <div class="header__QR">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class = 'header__QR-img'>
+                                <div class="header__QR-download">
+                                    <a href="#" class ='header__QR-download-app' ><img src="./assets/img/CHplay.png" alt="CHplay link" class="header__QR-download-link"></a>
+                                    <a href="#" class ='header__QR-download-app'><img src="./assets/img/Appstorre.png" alt="Appstore"  class="header__QR-download-link"></a>
+                                </div>
+                            
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-pointer">Kết nối</span> 
+                            <a href="#" ><i  class=" header__navbar-icon fab fa-facebook"></i></a>
+                            <a href="#" > <i  class=" header__navbar-icon fab fa-instagram"></i></a>
+                        </li>
+                
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-hover-notify">
+                            <a href="#" class="header__navbar-item-link"><i  class=" header__navbar-icon fas fa-bell"></i>thông báo</a>
+                            <!--Notify Box-->
+                            <ul class="product-list ">
+                                <header class="product-header"> <h3>Thông Báo Mới Nhận</h3></header>
+                                <li class="product-item product--seen">
+                                    <a href="#" class="product-item-link">
+                                        <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                        <div class="product-infor">
+                                            <span class="product-name">Tên sản phẩm </span>
+                                            <span class="product-describe">Mô tả sản phảm......................</span>
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="product-item product--seen">
+                                    <a href="#" class="product-item-link">
+                                        <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                        <div class="product-infor">
+                                            <span class="product-name">Đầu bấm mạng RJ45 AMP loại tốt (Hộp 100 hạt)</span>
+                                            <span class="product-describe">Hạt mạng AMP Cat 5e RJ45 là tên gọi vô cùng quen thuộc đối với những ai đã từng tìm hiểu về phụ kiện mạng – hạt mạng</span>
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <li class="product-item product--seen">
+                                    <a href="#" class="product-item-link">
+                                        <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                        <div class="product-infor">
+                                            <span class="product-name">Tên sản phẩm............</span>
+                                            <span class="product-describe">Mô tả sản phảm..........................</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+    
+                                <footer class="product-footer"><a href="#" class="product-footer-btn">Xem tất cả</a></footer>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item"><a href="#" class="header__navbar-item-link"><i  class=" header__navbar-icon fas fa-question-circle"></i>trợ giúp</a></li>
+                        <div class = "header__navbar-item" id = "login-none">
+                            
+                            <li class="header__navbar-item header__navbar-item-separate"><a href="#" class="header__navbar-item-link header__navbar-item-link-bold" id = "switch-register">Đăng Ký</a></li>
+                            <li class="header__navbar-item"><a href="#" class="header__navbar-item-link header__navbar-item-link-bold " id = "switch-login">Đăng Nhập</a></li>
+                        </div>
+                             <li id = "logged" class="header__navbar-item header__navbar-user-avatar">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="user-image" class="header__navbar-user-avatar-img">
+                            <span class="header__navbar-user-avatar-name">Hoàng AD</span>
+                            
+                            <ul class="header__navbar-user-avatar-list">
+                                <li class="header__navbar-user-avatar-item"><a href="#">Tài khoản của tôi</a></li>
+                                <li class="header__navbar-user-avatar-item"><a href="#">Địa chỉ của tôi</a></li>
+                                <li class="header__navbar-user-avatar-item"><a href="#">Đơn mua</a></li>
+                                <li class="header__navbar-user-avatar-item header__navbar-user-avatar-item-separate"><a href="/">Đăng xuất</a></li>
+
+                                 <!---   ADMIN------------------------------->
+                                <li id="admin-page-switch" class="header__navbar-user-avatar-item header__navbar-user-avatar-item-separate">
+                                    <a href="#">Admin page</a>
+                                   
+                                </li>
+
+                            
+
+                            </ul> 
+                        </li> 
+                    </ul>
+                </nav>
+            
+    
+                <div class="header__search-width">
+                    
+                    <input type="checkbox"  hidden id="menu-mobile" class="menu-mobile-check">
+                    <label for="menu-mobile" class="header__menu-mobile">
+                        <i class="menu-mobile-bar fas fa-bars"></i>
+                        <i class="menu-mobile-times fas fa-times"></i>
+                        <div class="overlay-mobile"></div>
+                        
+                    </label>
+                    <ul class="header__menu-mobile-list mobile-login-none">
+                        
+                        
+                        <li class="menu-mobile-item mobile-login-none-item"><a href="#">Khách quen</a></li>
+                        <li id = "mobile-login" class="menu-mobile-item mobile-login-none-item"><a href="#">Đăng Nhập</a></li>
+                        <li class="menu-mobile-item mobile-login-none-item"><a href="#">Đăng Ký</a></li>
+                        <li class="mobile-logged menu-mobile-item menu-mobile-item-user">
+                            <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="user-image" class="menu-mobile-user-avatar-img">
+                            <span class="menu-mobile-user-avatar-name">Hoàng AD</span>
+                        </li>
+                        <li class="mobile-logged menu-mobile-item"><a href="#">Tài khoản của tôi</a></li>
+                        <li id = "admin-page-switch_mobile" class="mobile-logged menu-mobile-item"><a href="#">Admin page</a></li>
+                        <li class="mobile-logged menu-mobile-item"><a href="#">Địa chỉ của tôi</a></li>
+                        <li class="menu-mobile-item"><a href="#">Trợ giúp</a></li>
+                        <li class="menu-mobile-item"><a href="#">Các sự kiện hấp dẫn</a></li>
+                        <li class="menu-mobile-item"><a href="#">Đơn mua</a></li>
+                        <li class="menu-mobile-item "><a href="/">Đăng xuất</a></li>
+                        
+                    </ul>
+
+                    <label for="search-mobile" class="header__search-mobile">
+                        <i class="header__search-mobile-icon fas fa-search"></i>
+                    </label>
+                    <input type="checkbox" hidden name="" class = "header__search-mobile-checkbox" id="search-mobile">
+                    <div class="header__logo-box">
+                        <a href="/"><img class="header__logo "src="./assets/img/shopit.png" alt="Shop it"></a>
+                    </div>
+                    
+                    <div class="header__search-box ">
+                        <input type="text" class="header__search-input" placeholder="Nhập từ tìm kiếm">
+                        <div class="header__history">
+                            <ul class="header__history-list">
+                                <li class="header__history-item">
+                                    Laptop giá rẻ cho sinh viên
+                                </li>
+                                <li class="header__history-item">
+                                    Tai nghe
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section-input header__search-select">
+                            <span class="section-input-label">Trong shop</span>
+                            <i class="fas fa-chevron-down"></i>
+    
+                            <ul class="section-input-option">
+                                <li class="section-input-option-item section-input-option-item-active">
+                                    <a href="#">Trong shop</a>
+                                
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="section-input-option-item">
+                                    <a href="#">Ngoài shop</a>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+        
+    
+                        </div>
+                        <div class="header__search-button">
+                            <button>
+                                <i class="header__search-button-icon fas fa-search"></i>
+                            </button>
+                        </div>
+    
+                        
+                    </div>
+    
+                    <div class="header__cart-box">
+                        <div class="header__cart">
+                            <span class="header__cart-notice">3</span>
+                            <i class=" fas fa-shopping-cart"></i>
+                            
+                            <div class="header__cart-list">
+                                <!-- Class: header__cart-list-none-->
+                               <div class=" "></div>
+    
+                                <!--list cart----------------->
+                                <!--Has class: header__cart-list--overflow-->
+                                <ul class = "header__cart-list--overflow" >
+                                    <header class="product-header"> <h3>sản phẩm mới thêm</h3></header>
+                                   
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                            <div class="product-infor">
+                                                <span class="product-name header__cart-name">
+                                                    <span>tên sản phẩm ha haha haha haah aaa haaah ahahaha ahahah a</span>
+                                                    <span>
+                                                        <span class="product-money">2.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="product-total">2</span>
+                                                    </span>
+                                                </span>
+                                                <span class="product-describe header__cart-describe">
+                                                    <span class="product-type">phân loại: thiết bị mạng</span>
+                                                    <span>xóa</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                     <li class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                            <div class="product-infor">
+                                                <span class="product-name header__cart-name">
+                                                    <span>tên sản phẩm ha haha haha haah aaa haaah ahahaha ahahah a</span>
+                                                    <span>
+                                                        <span class="product-money">2.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="product-total">2</span>
+                                                    </span>
+                                                </span>
+                                                <span class="product-describe header__cart-describe">
+                                                    <span class="product-type">phân loại: thiết bị mạng</span>
+                                                    <span>xóa</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item-link">
+                                            <img src="https://cf.shopee.vn/file/3a1057d9d49b017ffd3f2b120a923215" alt="ảnh sản phẩm" class="product-item-img">
+                                            <div class="product-infor">
+                                                <span class="product-name header__cart-name">
+                                                    <span>tên sản phẩm</span>
+                                                    <span>
+                                                        <span class="product-money">2.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="product-total">2</span>
+                                                    </span>
+                                                </span>
+                                                <span class="product-describe header__cart-describe">
+                                                    <span class="product-type">phân loại: thiết bị mạng</span>
+                                                    <span>xóa</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>   
+                                </ul>
+                                <footer class="product-footer"><a href="#" class="product-footer-btn">Xem tất cả</a></footer>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item-active">
+                    <a href="#" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+
+        </header>
+        
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row app__content sm-gutter ">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <header class="category-header">
+                                <i class="category-header-icon far fa-list-alt"></i>
+                                 Danh mục
+                            </header>
+                            <ul class="category-list">
+                                <li class="category-item category-item-active"><a class ="category-item-link" href="#">Tất cả</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Máy tính để bàn</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Laptop</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Điện thoại</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Thiết bị mạng</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Đồ chơi công nghệ</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Đồ bảo hộ</a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Phụ kiện </a></li>
+                                <li class="category-item"><a class ="category-item-link" href="#">Công nghệ khác</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home__filter hide-on-mobile-tablet">
+                            <span class="home__filter-label">Sắp xếp theo</span>
+                            <button class="btn home__filter-btn btn-primary">Phổ biến</button>
+                            <button class="btn home__filter-btn ">Mới nhất</button>
+                            <button class="btn home__filter-btn">Bán chạy</button>
+                            <div class="section-input home__filter-sort">
+                                <span class="section-input-label home__filter-sort-label">Giá</span>
+                                <i class="fas fa-chevron-down"></i>
+                                <ul class="section-input-option ">
+                                    <li class="section-input-option-item sort-method "><a href="#" >Giá: sắp xếp tăng dần</a></li>
+                                    <li class="section-input-option-item sort-method "><a href="#" >Giá: sắp xếp tăng dần</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="home__filter-page">
+                                <span class="home__filter-page-num">
+                                    <span class="home__filter-page-current">1</span>/14
+                                </span>
+
+                                <div class="home__filter-page-control">
+                                    <a href="#" class="home__filter-page-control-btn home__filter-page-control-btn-disable">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="#" class="home__filter-page-control-btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  MOBILE CATEGORY-->
+                        <nav class="mobile-category">
+                            <ul class="mobile-category-list">
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Tất cả</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Máy tính để bàn</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Laptop</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Điện thoại</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Thiết bị mạng</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Đồ chơi công nghệ</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Đồ bảo hộ</a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Phụ kiện </a></li>
+                                <li class="mobile-category-item"><a class ="mobile-category-link" href="#">Công nghệ khác</a></li>
+                            </ul>
+                        </nav>
+                        <!--  PRODUCT  ITEM---->
+                        <ul id = "product-lists" class="row sm-gutter product__main">
+                            
+                            <li id="product-1" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-1-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/1bdffdaffb94a1a71a856337efea5ae9);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-1-name" class ="product__main-wrap--name">[DRN-YHRC] Flycam YHRC điều khiển HD Camera</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-1-old-cost" class="product__main-wrap--money-origin">₫800.000</span>
+                                            <span id ="product-1-new-cost" class="product__main-wrap--money-current">₫480.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-1-sold-number" class="product__main-wrap--interaction--sold--number">171</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-1-address" class="product__main-wrap--address">Bình Dương</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">43%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li id="product-2" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-2-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/0a0cce0e6594ccf5d21ed8a1b87c2954);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-2-name" class ="product__main-wrap--name">Android Tivi Box Magicsee N5 Max phiên bản 2020 - Ram 4GB, Rom 32Gb, Android 9.0 ( Có Bản ATV) - Điều khiển giọng nói</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-2-old-cost" class="product__main-wrap--money-origin">₫1.190.000</span>
+                                            <span id ="product-2-new-cost" class="product__main-wrap--money-current">₫899.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-2-sold-number" class="product__main-wrap--interaction--sold--number">1,8k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-2-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">24%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-3" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-3-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/5c66ff583aeb82371d46a2c81515b4ad);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-3-name" class ="product__main-wrap--name">Vòng tay theo dõi sức khoẻ Mi Band 5 Xiaomi Tiếng Việt Miband 5</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-3-old-cost" class="product__main-wrap--money-origin">₫700.000</span>
+                                            <span id ="product-3-new-cost" class="product__main-wrap--money-current">₫576.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-3-sold-number" class="product__main-wrap--interaction--sold--number">6k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-3-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">12%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-4" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-4-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/5c66ff583aeb82371d46a2c81515b4ad);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-4-name" class ="product__main-wrap--name">Vòng tay theo dõi sức khoẻ Mi Band 5 Xiaomi Tiếng Việt Miband 5</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-4-old-cost" class="product__main-wrap--money-origin">₫700.000</span>
+                                            <span id ="product-4-new-cost" class="product__main-wrap--money-current">₫576.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-4-sold-number" class="product__main-wrap--interaction--sold--number">6k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-4-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">12%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-5" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-5-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/53bff0866064b4bbbd2fbf1d4fb58467);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-5-name" class ="product__main-wrap--name">Tai Nghe Nhét Tai TOPK F20 Chống Ồn Tích Hợp Micro Và Điều Khiển Âm Lượng</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-5-old-cost" class="product__main-wrap--money-origin">₫48.000</span>
+                                            <span id ="product-5-new-cost" class="product__main-wrap--money-current">₫16.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-5-sold-number" class="product__main-wrap--interaction--sold--number">20,6k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-5-address" class="product__main-wrap--address">Đà Nẵng</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">60%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-6" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-6-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/53a082bb34e3c6854b638cc0db316a04);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-6-name" class ="product__main-wrap--name">Laptop Apple Macbook Air 13 inch 2020 Core i3 Gen10 8GB 256GB SSD - Hàng nhập khẩu</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-6-old-cost" class="product__main-wrap--money-origin">₫2.000.000</span>
+                                            <span id ="product-6-new-cost" class="product__main-wrap--money-current">₫2.550.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-6-sold-number" class="product__main-wrap--interaction--sold--number">547</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-6-address" class="product__main-wrap--address">TP. HỒ Chí Minh</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">16%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-7" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-7-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/ef7594d57a604a1549b43a1f38b3a0bb);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-7-name" class ="product__main-wrap--name">[Mã ELFLASH1 hoàn 10K xu đơn 20K] Chuột máy tính Fuhlen L102 KM miếng lót chuột độ bám cực tốt</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-7-old-cost" class="product__main-wrap--money-origin">₫100.000</span>
+                                            <span id ="product-7-new-cost" class="product__main-wrap--money-current">₫50.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-7-sold-number" class="product__main-wrap--interaction--sold--number">8,2k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-7-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">50%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-8" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-8-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/e99fff96b848df05ad48d86a2c7f728a);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-8-name" class ="product__main-wrap--name">Đầu Chuyển Đổi Topk L38 Usb 3.1 Type C Sang Usb 3.0 Usb C Otg</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-8-old-cost" class="product__main-wrap--money-origin">₫47.000</span>
+                                            <span id ="product-8-new-cost" class="product__main-wrap--money-current">₫23.500</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-8-sold-number" class="product__main-wrap--interaction--sold--number">2,2k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-8-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">50%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li id="product-9" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-9-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/9e7342a17ac6c7dfb7095d56b538884b);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-9-name" class ="product__main-wrap--name">Bảng Mạch Giải Mã Âm Thanh Bluetooth 5.0 Không Dây Mp3 Vhm-314</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-9-old-cost" class="product__main-wrap--money-origin">₫46.840</span>
+                                            <span id ="product-9-new-cost" class="product__main-wrap--money-current">₫25.500</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class="fas fa-star "></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-9-sold-number" class="product__main-wrap--interaction--sold--number">1,8k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-9-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">46%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-10" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-10-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/f1606b7bfa6a3ebd80f993ca277b4026);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-10-name" class ="product__main-wrap--name">Bộ phát wifi router 4c Xiaomi Modem WiFi Xiaomi 4C 4 Râu Router R4CM</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-10-old-cost" class="product__main-wrap--money-origin">₫175.000</span>
+                                            <span id ="product-10-new-cost" class="product__main-wrap--money-current">₫140.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star"></i>
+                                                 <i class="fas fa-star "></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-10-sold-number" class="product__main-wrap--interaction--sold--number">234</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-10-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">16%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-11" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-11-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/713328416792a071e1acb2a11c93c4f8);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-11-name" class ="product__main-wrap--name">[Mã ELCL01 giảm 5% đơn 500K] Laptop Apple Macbook Air 13 inch 2020 Core i3 Gen10 8GB 256GB SSD - Nhập khẩu chính hãng</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-11-old-cost" class="product__main-wrap--money-origin">₫3.000.000</span>
+                                            <span id ="product-11-new-cost" class="product__main-wrap--money-current">₫2.000.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star star__rating-gold"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-11-sold-number" class="product__main-wrap--interaction--sold--number">35k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-11-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">25%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-12" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-12-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/1b3ff962001341704d35fa612ced086b);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-12-name" class ="product__main-wrap--name">Cáp chia USB 3.0 3 Port kèm cổng Ethernet LAN cho Macbook Air, Macbook Pro</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-12-old-cost" class="product__main-wrap--money-origin">₫750.000</span>
+                                            <span id ="product-12-new-cost" class="product__main-wrap--money-current">₫735.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star star__rating-gold"></i>
+                                                 <i class="fas fa-star "></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-12-sold-number" class="product__main-wrap--interaction--sold--number">24</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-12-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">2%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-13" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-13-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/d50160328f67ecdf9e20a15bc7a4dbc2);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-13-name" class ="product__main-wrap--name">[Combo] Bao da chống sốc, chống nước cho Macbook & túi đựng phụ kiện chính hãng Taikesen</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-13-old-cost" class="product__main-wrap--money-origin">₫390.000</span>
+                                            <span id ="product-13-new-cost" class="product__main-wrap--money-current">₫350.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star star__rating-gold"></i>
+                                                 <i class="fas fa-star star__rating-gold"></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-13-sold-number" class="product__main-wrap--interaction--sold--number">24k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-13-address" class="product__main-wrap--address">Hà Nội</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">12%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-14" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-14-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/0bb99ae601c4169b7d0578ae3dc2b0cd);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-14-name" class ="product__main-wrap--name">COMBO Case,Ốp Macbook Air 13" 2020,Pro 13" 2020 Kèm Phủ Phím Cùng Màu</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-14-old-cost" class="product__main-wrap--money-origin">₫357.600</span>
+                                            <span id ="product-14-new-cost" class="product__main-wrap--money-current">₫278.928</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star star__rating-gold"></i>
+                                                 <i class="fas fa-star "></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-14-sold-number" class="product__main-wrap--interaction--sold--number">11k</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-14-address" class="product__main-wrap--address">Biên Hòa</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">22%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="product-15" onClick="product_click(this.id)" class="col l-2-4 m-4 c-6">
+                                <a class="product__main-wrap">
+                                    <div id ="product-15-img" class="product__main-wrap--img" style ="background-image: url(https://cf.shopee.vn/file/2f55cd8a84011f1c5856a5ebc71e9321);"></div>
+                                    <div class="product__main-wrap--detail">
+                                        <h4 id ="product-15-name" class ="product__main-wrap--name">Giá đỡ laptop - Macbook nhôm cao cấp có túi đựng, có thể xếp gọn & điều chỉnh độ cao, sửa tư thế ngồi làm việc</h4>
+                                        <div class="product__main-wrap--money">
+                                            <span id ="product-15-old-cost" class="product__main-wrap--money-origin">₫200.000</span>
+                                            <span id ="product-15-new-cost" class="product__main-wrap--money-current">₫165.000</span>
+                                        </div>
+                                        <div class="product__main-wrap--interaction">
+                                            <!--  Has class:  product__main-wrap--interaction--like  -->
+                                            <div class=" ">
+                                                <i class=" product__main-wrap--interaction--empty far fa-heart"></i>
+                                                <i class=" product__main-wrap--interaction--fill fas fa-heart"></i>
+                                            </div>
+                                            <div class="product__main-wrap--interaction--rating">
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" star__rating-gold fas fa-star"></i>
+                                                 <i class=" fas fa-star star__rating-gold"></i>
+                                                 <i class="fas fa-star star__rating-gold "></i>
+                                             </div>
+                                             <span class="product__main-wrap--interaction--sold">Đã bán 
+                                                 <span id ="product-15-sold-number" class="product__main-wrap--interaction--sold--number">547</span>
+                                             </span>
+                                        </div>
+                                        <div id ="product-15-address" class="product__main-wrap--address">TP. HỒ Chí Minh</div>
+                                    </div>
+                                    <div class="product__main-wrap--favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="product__main-wrap--sale-off">
+                                        <span class = "product__main-wrap--sale-off--percent ">45%</span>
+                                        <span class="product__main-wrap--sale-off--label">Giảm</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--    DISPLAY PRODUCT DETAIL----------------->   
+                        <div id ="product-detail">
+                            
+                            
+                            
+                        </div>
+
+                        
+                        </ul>
+
+                         <div class="row">
+                            <ul class="pagination-list home__filter--footer">
+                                <li class="pagination-item ">
+                                    <a href="#" class="pagination-link">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item pagination-item--active ">
+                                    <a href="#" class="pagination-link">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        15
+                                    </a>
+
+                                </li>
+
+                                <li class="pagination-item">
+                                    <a href="#" class="pagination-link">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide Footer__mobile">
+                <div class="row">
+
+                    <ul class="footer-list col l-2-4 m-4 c-6 ">
+                        <header class="footer-headings">Chăm sóc khách hàng</header>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Trung tâm trợ giúp</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Shopee Blog</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Shopee Mall</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Hướng dẫn mua hàng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Hướng dẫn bán hàng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Thanh toán</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Shop xu</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Vận chuyển</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Trả hàng & Hoàn tiền</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Chăm sóc khách hàng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Chính sách bảo hành</a></li>
+                    </ul>
+
+                    <ul class="footer-list col l-2-4 m-4 c-6 ">
+                        <header class="footer-headings">Về Shop</header>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Giới thiệu về shop Việt Nam</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Tuyển dụng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Điều khoản shop</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Chính sách bảo mật</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Chính hãng</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Kênh người bán</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Flash sales</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Chương trình tiếp thị liên kết shop </a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link">Liên hệ với truyền thông</a></li>
+                    </ul>
+                    <ul class="footer-list col l-2-4 m-4 c-6 ">
+                        <header class="footer-headings">Thanh toán</header>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-cc-visa"></i> Visa</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-cc-amazon-pay"></i> Amazon pay</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-paypal"></i> Pay pay</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-cc-amex"></i> Amex</a></li>
+                    </ul>
+                    <ul class="footer-list col l-2-4 m-4 c-6 ">
+                        <header class="footer-headings">liên kết</header>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i  class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="footer-item"><a href="#" class="footer-item-link"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                    </ul>
+
+                    <div class=" col l-2-4 m-8 c-12">
+                        <header class="footer-headings">Tải ứng dụng Shop ngay thôi</header>
+                        <div class="footer-list--dowload">
+                            <a href="#" ><img class="footer-item-qr" src=" ./assets/img/qr_code.png"></a>
+                            <div class="footer-item--dowload">
+                                <a href="#"><img  class="footer-item-chplay" src="./assets/img/CHplay.png"></a>
+                                <a href="#" ><img class="footer-item-appstore" src="./assets/img/Appstorre.png"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+            </div>
+            <div class="footer--end">
+                <p>Địa chỉ: Tầng 100, Tòa nhà trung tâm 000, 12 H, phường  O, Quận A, NG. Tổng đài hỗ trợ: 1900100... - Email: cskh@hotro.shop.vn
+                Mã số doanh nghiệp: 0123456789 do Sở Kế hoạch & Đầu tư TP cấp lần đầu ngày 32/12/2020</p>
+                <p>© 2020 - Bản quyền thuộc về Công ty TNHH Shop</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!--MODAL------------------------------>
+     <div class="modal" id = "modal">
+        <div class="modal__overlay ">
+        </div>
+        <div class="modal__body "> 
+
+                <!--Register FORM-->
+             <div class=" authen__form " id="register-form">
+                <div class="authen__form-container ">
+                    <header class="authen__form-header ">
+                        <span class="authen__form-header--switch"> Đăng Ký</span>
+                        <span class="authen__form-header--switch-btn">Đăng Nhập</span>
+                    </header>
+    
+                    <div class="authen__form-input">
+                        <div class="authen__form-input-about">
+                            <input type="text" class="authen__form-input-about--input input-non-outline" placeholder="TÀI KHOẢN CỦA BẠN">
+    
+                        </div>
+                        <div class="authen__form-input-about">
+                            <input type="password" class="authen__form-input-about--input input-non-outline" placeholder="MẬT KHẨU CỦA BẠN" >
+                            
+                        </div>
+                        <div class="authen__form-input-about">
+                            <input type="password" class="authen__form-input-about--input input-non-outline" placeholder="KIỂM TRA LẠI MẬT KHẨU">
+                            
+                        </div>
+                    </div>
+    
+                    <div class="authen__form-policy">
+                        <p class="authen__form-policy-text">bằng việc đăng kí bạn đã đồng ý với shop về
+                        <a href="#" class="authen__form-policy-link">Điều khoản dịch vụ</a> & 
+                        <a href="#" class="authen__form-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+    
+                    <div class="authen__form-buttons">
+                        <a href="/" class="btn btn-normal btn-name--back">
+                            TRỞ LẠI
+                        </a><button class="btn btn-primary">
+                            ĐĂNG KÝ
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="authen__form-socials">
+                    <a href="#" class="authen__form-socials-button-facebook btn"> <i class="fab fa-facebook-square"></i> <span class="button-facebook-text">contact with facebook</span></a>
+                    <a href="#" class="authen__form-socials-button-google btn"><i class="fab fa-google"></i> <span class="button-google-text">contact with google</span></a>
+                </div>
+            </div> 
+            
+                <!--login FORM-->
+                    <div class=" authen__form" id = "login-form">
+                    <div class="authen__form-container ">
+                        <header class="authen__form-header ">
+                            <span class="authen__form-header--switch"> Đăng Nhập</span>
+                            <span class="authen__form-header--switch-btn">Đăng Ký</span>
+                        </header>
+        
+                        <div class="authen__form-input">
+                            <div class="authen__form-input-about">
+                                <input type="text" id = "USER-ACCOUNT" class="authen__form-input-about--input input-non-outline" placeholder="TÀI KHOẢN CỦA BẠN">
+        
+                            </div>
+                            <div class="authen__form-input-about">
+                                <input type="password" id = "PASSWORD-ACCOUNT" class="authen__form-input-about--input input-non-outline" placeholder="MẬT KHẨU CỦA BẠN" >
+                                
+                            </div>
+                            
+                        </div>
+        
+                        <div class="authen__form-aside">
+                            <a href="#" class="authen_form-forgot-pass">Quên mật khẩu</a>
+                            <a href="#" class="authen_form-help">Cần giúp đỡ?</a>
+                        </div>
+        
+                        <div class="authen__form-buttons">
+                            <a href ="/" class="btn btn-normal btn-name--back">
+                                TRỞ LẠI
+                            </a><button class="btn btn-primary" id="login-button">
+                                ĐĂNG NHẬP
+                            </button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="authen__form-socials">
+                        <a href="#" class="authen__form-socials-button-facebook btn"> <i class="fab fa-facebook-square"></i> <span class="button-facebook-text">Facebook</span></a>
+                        <a href="#" class="authen__form-socials-button-google btn"><i class="fab fa-google"></i> <span class="button-google-text">Google</span></a>
+                    </div>
+                </div> 
+            </div>
+    </div> 
+   <!---ADMIN  -->
+    <div id = "admin-app" class="admin-app">
+        <div id="back-home"  onClick="backHome()">
+            <i class=" fas fa-times"></i>
+        </div>
+        <div class="input-form">
+            <input type="file"  accept="image/*">
+            <p class="or">OR</p> 
+            <input type="text" id="image-input" placeholder="link ảnh">
+            <input type="text" id="name-input" placeholder="Nhập tên sản phẩm">
+            <input type="text" id="id-input" placeholder="Nhập id: (cú pháp: product-n. vd product-1)">
+            <input type="number" id="old-cost-input" placeholder="Nhập giá gốc">
+            <input type="number" id="new-cost-input" placeholder="Nhập giá mới">
+            <input type="number" id="sold-number-input" placeholder="Nhập số lượng đã bán:">
+            <input type="text" id="address-input" placeholder="Nhập dia chi sản phẩm">
+            <button id = "add-button"> Add</button>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>
